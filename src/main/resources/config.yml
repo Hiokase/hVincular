@@ -1,0 +1,93 @@
+# ==========================================================
+# Configuração do hVincular
+# Plugin de vinculação de tags baseado em canais do YouTube
+# ==========================================================
+#
+# NOVIDADES:
+# - Sistema de detecção de canais suspeitos enviando alertas para o Discord
+# - Entrada de URL via chat com timeout configurável
+# - Validação de formato de URL com expressões regulares
+# - Cancelamento automático se o usuário inserir uma URL inválida
+
+# Configuração da API do YouTube
+youtube:
+  # Chave da API do YouTube (obrigatória para o funcionamento do plugin)
+  # Obtenha sua chave em: https://console.developers.google.com/
+  api-key: "SUA_CHAVE_DE_API_AQUI"
+
+# Configuração do servidor
+server:
+  # Lista de IPs a serem verificados na descrição do vídeo
+  # Pelo menos um destes IPs deve estar presente na descrição
+  ips:
+    - "play.servidor.com.br"
+    - "servidor.com.br"
+    - "loja.servidor.com.br"
+  
+  # Define se será feito um teste de conexão com a API do YouTube durante o início
+  # Recomendado deixar ativado para verificar se a chave da API está funcionando
+  test-api-on-startup: true
+  
+  # Verificação de reutilização de vídeos
+  # Define se o sistema deve impedir que jogadores usem vídeos que já foram utilizados por outras pessoas
+  prevent-video-reuse: true
+  
+  # Verificação de código personalizado
+  verification-code:
+    # Ativa ou desativa a verificação de código personalizado
+    enabled: true
+    # Prefixo para o código de verificação na descrição do vídeo
+    # O código completo será: [prefixo][nome do jogador]
+    prefix: "CODIGO-VERIFICACAO:"
+    
+  # Configurações para entrada de URL via chat
+  chat-input:
+    # Tempo em segundos que o jogador tem para inserir a URL no chat
+    # Após esse tempo, a ação será cancelada
+    timeout: 60
+    # Mensagem exibida quando o tempo expira
+    timeout-message: "&cTempo esgotado! A ação foi cancelada."
+    # Mensagem exibida quando o formato da URL é inválido
+    invalid-url-message: "&cURL inválida! A ação foi cancelada."
+    # Padrão de URL válida (expressão regular)
+    url-pattern: "^(https?://)?(www\\.)?(youtube\\.com/watch\\?v=|youtu\\.be/)[a-zA-Z0-9_-]{11}.*$"
+    # Mensagem enviada ao jogador quando ele precisa digitar a URL
+    prompt-message: "&aDigite a URL do seu vídeo do YouTube no chat. Você tem {timeout} segundos."
+    
+  # Modo de depuração (debug)
+  # Quando habilitado, exibe mensagens detalhadas no console para diagnóstico de problemas
+  debug: false
+
+
+# Configuração do banco de dados MySQL
+database:
+  # Ativar ou desativar o uso de banco de dados
+  # Se desativado, todas as vinculações serão apenas temporárias
+  enabled: false
+  
+  # Tipo de banco de dados: "mysql" ou "sqlite"
+  # - mysql: Requer servidor MySQL/MariaDB externo (mais robusto, recomendado para servidores grandes)
+  # - sqlite: Banco de dados local em arquivo (mais simples, recomendado para servidores pequenos)
+  type: "sqlite"
+  
+  # Nome do banco de dados 
+  # - Para MySQL: nome do banco de dados no servidor MySQL
+  # - Para SQLite: nome do arquivo .db que será criado na pasta do plugin
+  database: "hvincular"
+  
+  # Configurações específicas do MySQL (ignoradas se usando SQLite)
+  # Host do servidor MySQL
+  host: "localhost"
+  
+  # Porta do servidor MySQL
+  port: 3306
+  
+  # Nome de usuário para conexão MySQL
+  username: "root"
+  
+  # Senha para conexão MySQL
+  password: "senha"
+  
+  # Prefixo para as tabelas do plugin
+  # Útil quando um banco de dados é compartilhado entre vários plugins
+  table-prefix: "hv_"

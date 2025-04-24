@@ -1,0 +1,68 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = "hplugins.anuncio"
+version = "1.0-SNAPSHOT"
+description = "Plugin de Anuncio"
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://hub.spigotmc.org/nexus/content/repositories/snapshots/" }
+    maven { url "https://oss.sonatype.org/content/groups/public/" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://repo.aikar.co/content/groups/aikar/" }
+    maven { url "https://repo.extendedclip.com/content/repositories/placeholderapi/" }
+    maven { url "https://maven.enginehub.org/repo/" }
+}
+
+dependencies {
+    implementation "com.github.cryptomorin:XSeries:11.2.0.1"
+    implementation "com.github.MilkBowl:VaultAPI:1.7"
+    implementation "org.jetbrains:annotations:23.0.0"
+    implementation "com.sk89q.worldedit:worldedit-bukkit:7.2.9"
+    implementation "com.sk89q.worldedit:worldedit-core:7.2.0-SNAPSHOT"
+    implementation "com.google.apis:google-api-services-youtube:v3-rev222-1.25.0"
+    implementation "com.google.api-client:google-api-client:1.31.2"
+    implementation "com.google.oauth-client:google-oauth-client:1.31.4"
+    implementation 'com.google.http-client:google-http-client:1.38.0'
+    implementation 'com.google.http-client:google-http-client-gson:1.38.1'
+    implementation 'com.google.http-client:google-http-client-apache-v2:1.38.1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.google.guava:guava:21.0'
+    compileOnly "org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT"
+    implementation "mysql:mysql-connector-java:8.0.30"
+    implementation "org.xerial:sqlite-jdbc:3.39.3.0"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType(Javadoc).configureEach {
+    options.encoding = "UTF-8"
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from configurations.runtimeClasspath.collect {
+        it.isDirectory() ? it : zipTree(it)
+    }
+    into("META-INF/maven/$project.group/$project.name") {
+        from generatePomFileForMavenPublication
+    }
+}

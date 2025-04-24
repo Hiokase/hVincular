@@ -1,0 +1,162 @@
+# ==========================================================
+# Configuração de menus do hVincular
+# ==========================================================
+
+# Configuração geral do menu
+menu:
+  # Título do menu de seleção de tags
+  title: "&8Vinculação de Tags"
+  
+  # Tamanho do inventário (linhas de slots)
+  # Valores possíveis: 1, 2, 3, 4, 5, 6 (cada linha tem 9 slots)
+  # Por exemplo, 3 = inventário de 27 slots (3 linhas)
+  size: 3
+  
+  # Configuração de sons (OPCIONAL)
+  # Use os nomes de sons do Minecraft (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html)
+  sounds:
+    click: "CLICK" # Som ao clicar em um item
+    success: "LEVEL_UP" # Som ao ter sucesso na verificação
+    error: "ANVIL_BREAK" # Som quando ocorre um erro
+    menu_open: "CHEST_OPEN" # Som ao abrir o menu
+    menu_close: "CHEST_CLOSE" # Som ao fechar o menu
+    notification: "NOTE_PLING" # Som de notificação
+
+# Configuração das tags disponíveis
+tags:
+  miniyt:
+    name: "Mini YouTuber"   # Nome da tag
+    permission: "tag.miniyt" # Permissão que será concedida ao jogador
+    min-subscribers: 100 # Requisitos
+    min-views: 500 # Requisitos
+    menu-slot: 10 # Posição no menu (começando do 0)
+    item:
+      material: "GOLD_INGOT" # Material do item (compatível com todas as versões)
+      # Quantidade do item
+      amount: 1
+      durability: 0
+      display-name: "&6Tag Mini YT" # Nome de exibição do item
+      lore:
+        - "&7Esta tag é para pequenos criadores"
+        - "&7de conteúdo que estão começando"
+        - ""
+        - "&fRequisitos:"
+        - "&7- Canal com pelo menos &e%min_subscribers% &7inscritos"
+        - "&7- Canal com pelo menos &e%min_views% &7visualizações"
+        - "&7- IP do servidor na descrição do vídeo"
+        - ""
+        - "&eClique para vincular!"
+    
+    # Comandos personalizados para esta tag específica
+    permissions:
+      # Comando para adicionar tag (permissão) ao jogador
+      # Use {player} para o nome do jogador, {permission} para a permissão da tag
+      add-command: "lp user {player} permission set {permission}"
+      
+      # Comando para remover tag (permissão) do jogador (usado em caso de erro ou revogação)
+      # Use {player} para o nome do jogador, {permission} para a permissão da tag
+      remove-command: "lp user {player} permission unset {permission}"
+    
+    # Comandos a serem executados quando um jogador verificar seu canal com sucesso para esta tag
+    # Use {player} para o nome do jogador, {tag} para o nome da tag, {channel} para o ID do canal
+    rewards:
+      # Ativar ou desativar a execução de comandos para esta tag específica
+      enabled: true
+      # Lista de comandos a serem executados
+      commands:
+        - "tell {player} Parabéns! Você vinculou com sucesso seu canal à tag {tag}!"
+        - "broadcast &a{player} acabou de vincular seu canal do YouTube e ganhou a tag {tag}!"
+
+  youtuber:
+    name: "YouTuber"
+    permission: "tag.youtuber"
+    min-subscribers: 1000
+    min-views: 2000
+    menu-slot: 12
+    item:
+      material: "DIAMOND"
+      amount: 1
+      durability: 0
+      display-name: "&bTag YouTuber"
+      lore:
+        - "&7Esta tag é para criadores de conteúdo"
+        - "&7com uma base de inscritos estabelecida"
+        - ""
+        - "&fRequisitos:"
+        - "&7- Canal com pelo menos &e%min_subscribers% &7inscritos"
+        - "&7- Canal com pelo menos &e%min_views% &7visualizações"
+        - "&7- IP do servidor na descrição do vídeo"
+        - ""
+        - "&eClique para vincular!"
+    permissions:
+      add-command: "lp user {player} permission set {permission}"
+      remove-command: "lp user {player} permission unset {permission}"
+    rewards:
+      enabled: true
+      commands:
+        - "eco give {player} 5000"
+        - "manuaddp {player} essentials.kits.youtuber"
+        - "broadcast &b{player} vinculou seu canal como &aYouTuber &be ganhou recompensas exclusivas!"
+
+  youtuberplus:
+    name: "YouTuber+"
+    permission: "tag.youtuberplus"
+    min-subscribers: 5000
+    min-views: 10000
+    menu-slot: 14
+    item:
+      material: "EMERALD"
+      amount: 1
+      durability: 0
+      display-name: "&aTag YouTuber+"
+      lore:
+        - "&7Esta tag é para criadores de conteúdo"
+        - "&7com grande alcance e influência"
+        - ""
+        - "&fRequisitos:"
+        - "&7- Canal com pelo menos &e%min_subscribers% &7inscritos"
+        - "&7- Canal com pelo menos &e%min_views% &7visualizações"
+        - "&7- IP do servidor na descrição do vídeo"
+        - ""
+        - "&eClique para vincular!"
+    permissions:
+      add-command: "lp user {player} permission set {permission}"
+      remove-command: "lp user {player} permission unset {permission}"
+    rewards:
+      enabled: true
+      commands:
+        - "eco give {player} 10000"
+        - "manuaddp {player} essentials.kits.youtuberplus"
+        - "broadcast &a{player} vinculou seu canal como &aYouTuber+ &be recebeu diversas recompensas!"
+        - "give {player} diamond 10"
+  streamer:
+    name: "Streamer"
+    permission: "tag.streamer"
+    min-subscribers: 2000
+    min-views: 5000
+    menu-slot: 16
+    item:
+      material: "REDSTONE"
+      amount: 1
+      durability: 0
+      display-name: "&cTag Streamer"
+      lore:
+        - "&7Esta tag é para streamers que"
+        - "&7divulgam o servidor em seus vídeos"
+        - ""
+        - "&fRequisitos:"
+        - "&7- Canal com pelo menos &e%min_subscribers% &7inscritos"
+        - "&7- Canal com pelo menos &e%min_views% &7visualizações"
+        - "&7- IP do servidor na descrição do vídeo"
+        - ""
+        - "&eClique para vincular!"
+    permissions:
+      add-command: "lp user {player} permission set {permission}"
+      remove-command: "lp user {player} permission unset {permission}"
+    rewards:
+      enabled: true
+      commands:
+        - "eco give {player} 7500"
+        - "manuaddp {player} essentials.kits.streamer"
+        - "broadcast &c{player} vinculou seu canal como &cStreamer &fe está promovendo o servidor!"
+        - "give {player} gold_ingot 5"

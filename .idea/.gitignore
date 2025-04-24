@@ -1,0 +1,16 @@
+# Diretórios e arquivos do IntelliJ IDEA
+.idea/
+*.iml
+
+# Diretórios de build do Gradle
+.gradle/
+build/
+gradle/
+
+# Arquivos do Gradle Wrapper que podem ser baixados novamente
+gradlew
+gradlew.bat
+
+# Arquivos de cache e logs
+*.log
+*.zip
