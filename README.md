@@ -48,7 +48,6 @@ O **hVincular** é um plugin completo para servidores Minecraft que permite aos 
 ## 🔧 Requisitos
 
 - Servidor Bukkit/Spigot/Paper 1.7+
-- Plugin de permissões compatível com Vault (ex: LuckPerms)
 - Java 8 ou superior
 - Chave da API do YouTube (YouTube Data API v3)
 
