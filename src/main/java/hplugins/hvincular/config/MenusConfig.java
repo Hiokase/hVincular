@@ -61,9 +61,7 @@ public class MenusConfig {
         int menuRows = menusConfig.getInt("menu.size", 3);
         menuRows = Math.max(1, Math.min(6, menuRows));
         menuSize = menuRows * 9;
-        
-        plugin.getLogger().info("§a[hVincular] §fTamanho do menu configurado: " + menuRows + " linhas (" + menuSize + " slots)");
-        
+
         ConfigurationSection tagsSection = menusConfig.getConfigurationSection("tags");
         if (tagsSection == null) {
             plugin.getLogger().warning("Nenhuma tag encontrada no arquivo de configuracao.");
