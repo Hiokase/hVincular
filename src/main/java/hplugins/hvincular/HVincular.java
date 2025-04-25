@@ -107,12 +107,12 @@ public class HVincular extends JavaPlugin {
     private void testYouTubeApiConnection() {
         youTubeAPI.testConnection().thenAccept(success -> {
             if (success) {
-                getLogger().info("Conexão com a API do YouTube estabelecida.");
+                getServer().getConsoleSender().sendMessage("§8[§6hVincular§8] §aConexão com a API do YouTube estabelecida.");
             } else {
-                getLogger().warning("Falha ao conectar com a API do YouTube. Verifique a chave no config.yml.");
+                getServer().getConsoleSender().sendMessage("§8[§6hVincular§8] §cFalha ao conectar com a API do YouTube. Verifique a chave no config.yml.");
             }
         }).exceptionally(ex -> {
-            getLogger().severe("Erro ao testar conexão com a API do YouTube: " + ex.getMessage());
+            getServer().getConsoleSender().sendMessage("§8[§6hVincular§8] §cErro ao testar conexão com a API do YouTube: §f" + ex.getMessage());
             return null;
         });
     }
