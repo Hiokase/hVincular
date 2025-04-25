@@ -5,67 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e779684-a6d5-480b-af07-91ac9851ffce" name="Changes" comment="V 1.0.0">
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/HVincular$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/HVincular.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/command/DesvincularCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/command/DesvincularTabCompleter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/command/HVCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/command/HVTabCompleter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/command/VincularCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/config/ConfigManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/config/JsonWebhookConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/config/MenusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/config/MessagesConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/config/WebhookConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/database/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/database/DatabaseFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/database/DatabaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/database/mysql/MySQL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/database/sqlite/SQLite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/gui/MenuManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/gui/TagSelectionMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/PermissionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/discord/DiscordWebhook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/youtube/YouTubeAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/youtube/YouTubeVerifier$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/youtube/YouTubeVerifier$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/youtube/YouTubeVerifier$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/youtube/YouTubeVerifier$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/integration/youtube/YouTubeVerifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/listener/ChatInputListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/listener/MenuClickListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/model/PlayerData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/model/Tag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/CacheManager$CacheEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/CacheManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ChatInputManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ChatInputManager$PlayerInput.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ChatInputManager$UrlInputCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ChatInputManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ColorUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ConfigUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/CooldownManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/EmojiSafeYamlLoader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/InventoryUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/ItemBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/JsonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/LoggerUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/SoundUtil$SoundType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/SoundUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/TextUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hplugins/hvincular/util/XInventoryUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/hVincular-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/publications/maven/pom-default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/menus.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/messages.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/plugin.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/webhook.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/webhook.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hplugins/hvincular/HVincular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hplugins/hvincular/HVincular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,33 +94,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.D:/ProjetosMine/hAnuncios [wrapper].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.hAnuncios [build clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.hAnuncios [clean build].executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.hVincular [clean build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.hVincular [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Vcs Important Messages&quot;: &quot;VCS important messages&quot;,
-    &quot;Notification.DoNotAsk-Vcs Important Messages&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ProjetosMine/hVincular&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.D:/ProjetosMine/hAnuncios [wrapper].executor": "Run",
+    "Gradle.hAnuncios [build clean].executor": "Run",
+    "Gradle.hAnuncios [clean build].executor": "Debug",
+    "Gradle.hVincular [clean build].executor": "Run",
+    "Gradle.hVincular [clean].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS important messages",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/ProjetosMine/hVincular",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ProjetosMine\hAnuncios" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.hVincular [clean]">
+  <component name="RunManager" selected="Gradle.hVincular [clean build]">
     <configuration name="hVincular [clean build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
