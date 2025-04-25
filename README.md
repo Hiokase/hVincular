@@ -178,7 +178,7 @@ youtuber:
 ## 📞 Suporte
 
 - GitHub: [github.com/Hokase](https://github.com/Hokase)
-- Discord: `hokase`
+- Discord: [hPlugins](https://discord.gg/xNpCTaY)
 - YouTube: [@SoOHokase](https://youtube.com/@SoOHokase)
 
 ---
