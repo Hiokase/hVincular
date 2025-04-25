@@ -143,7 +143,6 @@ youtuber:
 ### Jogadores
 - `/vincular` – Abre o menu
 - `/vincular <url>` – Vincula com vídeo
-- `/desvincular` – Remove vinculação
 
 ### Admins
 - `/hv reload` – Recarrega configs
@@ -158,6 +157,13 @@ youtuber:
 - `{tag}` – Nome da tag
 - `{subscribers}` – Inscritos do canal
 - `{video_url}` – URL usada na verificação
+
+---
+
+## 🧩 Permissoes
+
+- `hvincular.use` – Permite jogadores utilizar o comando /vincular
+- `hvincular.admin` – Permite o uso do /hdesvincular
 
 ---
 
