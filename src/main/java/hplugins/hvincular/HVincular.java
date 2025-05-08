@@ -76,7 +76,7 @@ public class HVincular extends JavaPlugin {
         if (youTubeAPI != null) youTubeAPI.clearAllCaches();
         if (databaseManager != null) databaseManager.disconnect();
 
-        getServer().getConsoleSender().sendMessage("§8[§6hVincular§8] §c§lPlugin hVincular desativado.");
+        getServer().getConsoleSender().sendMessage("§8[§6hVincular§8] §c§lPlugin hVincular desativado!.");
     }
 
     private void registerCommands() {
